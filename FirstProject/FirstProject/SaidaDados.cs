@@ -58,6 +58,58 @@ namespace FirstProject
             Console.WriteLine("Arredondado (3 casas decimais): {0:F3}", medida);
 
 
+            // Casting
+
+            int a = 2;
+            int b = 5;
+
+            double resultado1 = b / a;
+            Console.WriteLine(resultado1);
+
+            // conversão explícita dos dados
+            double resultado2 = (double) b / a;
+            Console.WriteLine(resultado2);
+
+
+            // Entrada de múltiplos dados na mesma linha (mesmo tipo de dado)
+            // miriam sarah cecilia gustavo
+
+            string[] vetor = Console.ReadLine().Split(' ');
+
+            foreach (string v in vetor)
+            {
+                Console.WriteLine(v);
+            }
+
+            // Entrada de múltiplos dados na mesma linha (diferentes tipos de dados)
+            // Miriam F 34 1.65
+
+            string[] vetor2 = Console.ReadLine().Split(' ');
+
+            string name = vetor2[0];
+            char sex = char.Parse(vetor2[1]);
+            int age = int.Parse(vetor2[2]);
+            double height = double.Parse(vetor2[3]);
+
+            foreach (object o in vetor2)
+            {
+                Console.WriteLine(o);
+            }
+
+
+            // Entrada de tipos de dados diferentes
+
+            int numero = int.Parse(Console.ReadLine());
+            char caractere = char.Parse(Console.ReadLine());
+            double numero2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine(numero);
+            Console.WriteLine(caractere);
+            Console.WriteLine(numero2);
+            
+
+
+
         }
     }
 }
